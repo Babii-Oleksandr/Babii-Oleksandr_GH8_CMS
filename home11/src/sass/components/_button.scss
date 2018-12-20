@@ -1,0 +1,19 @@
+.btn-outline-primary {
+  background: url('../img/button-bg.png') center no-repeat ;
+}
+
+.btn {
+  padding: 10px 55px;
+  color: #ffffff;
+  border-radius: 25px;
+  border: none;
+  margin: 65px 0 200px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.mouse {
+  margin-top: 250px;
+}
