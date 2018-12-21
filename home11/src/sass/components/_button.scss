@@ -1,10 +1,8 @@
-.btn-outline-primary {
-  background: url('../img/button-bg.png') center no-repeat ;
-}
 
 .btn {
   display: block;
-  padding: 10px 50px;
+  background: url('../img/button-bg.png') center no-repeat ;
+  padding: 15px 50px;
   color: #ffffff;
   border-radius: 25px;
   border: none;
@@ -12,6 +10,7 @@
 
   &:hover {
     opacity: 0.8;
+    color: #ffffff;
   }
 }
 

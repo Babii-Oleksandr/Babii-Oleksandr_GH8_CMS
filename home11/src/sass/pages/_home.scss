@@ -37,7 +37,6 @@ h2 {
 
   .best-design-code .btn {
     margin:10px auto 40px;
-
   }
 }
 
@@ -52,10 +51,9 @@ h2 {
 
   .best-design-code .btn {
     margin:40px 0 145px;
-
+    display: inline-block;
   }
 }
-
 
 //........................................What we do
 
@@ -110,4 +108,126 @@ h2 {
   .what-we-do {
     padding: 100px 0;
   }
+
+  .what-we-do .btn {
+    margin: 90px auto 0;
+  }
+
+  .what-we-do h2 {
+    margin-bottom: 110px;
+  }
+}
+
+//.......................................slider
+
+.slider .row {
+  margin: 0;
+}
+
+.drone-zone {
+  background: url('../img/drone-zone.png') center no-repeat;
+  background-size: cover;
+
+}
+
+.profile {
+  background: url('../img/profile.png') center no-repeat;
+  background-size: cover;
+}
+
+.fit-app {
+  background: url('../img/fit-app.png') center no-repeat;
+  background-size: cover;
+}
+
+.text-hover {
+  padding: 125px 50px;
+  text-align: center;
+  background: url('../img/black-fon.png') center;
+  height: 100%;
+}
+
+.text-hover {
+  display: none;
+
+  h3 {
+    color: #ffffff;
+    font-family: $font;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  p{
+    color: #ffffff;
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+
+  }
+
+  .btn {
+    margin: 65px 0 0;
+  }
+}
+
+.list {
+  height: 480px;
+  padding: 0;
+
+  &:hover {
+    .text-hover {
+      display: block;
+    }
+  }
+}
+
+//........................................about-us
+
+
+.about-us {
+  background: url('../img/about-bg.png') center no-repeat;
+  background-size: cover;
+  padding: 110px 0;
+
+  h2 {
+    text-align: center;
+  }
+
+  .text-about-us {
+    color: #949494;
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  h4 {
+    color: #ffffff;
+    font-family: $font;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin: 20px 0;
+  }
+
+  .main-items {
+    margin: 80px 0;
+  }
+
+  .items {
+    text-align: center;
+  }
+
+  .btn {
+    margin: 0;
+  }
+}
+//.........................maps
+
+iframe {
+  width: 100%;
+  height: 610px;
 }
