@@ -1,4 +1,113 @@
+//...........................................best-design-code
+
+.best-design-code {
+  background: url('../img/Best-Design-Code-bg.png') center no-repeat;
+  background-size: cover;
+}
+
+.best-text {
+  color: #ffffff;
+  font-family: $font;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: $font;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 36px;
+  margin-bottom: 20px;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+@media (max-width:768px) {
+  .best-design {
+    padding: 30px;
+  }
+
+  .best-code {
+    padding: 30px;
+  }
+
+  .best-design-code .btn {
+    margin:10px auto 40px;
+
+  }
+}
+
+@media (min-width:768px) {
+  .best-design {
+    padding: 145px 60px 0 0;
+  }
+
+  .best-code {
+    padding: 145px 0 0 60px;
+  }
+
+  .best-design-code .btn {
+    margin:40px 0 145px;
+
+  }
+}
 
 
+//........................................What we do
 
+.what-we-do h2 {
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+}
 
+.subtitle-media-body {
+  color: #000000;
+  font-family: $font;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.text-media-body {
+  color: #949494;
+  font-family: $font;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.what-we-do .btn {
+  margin: 0 auto;
+}
+
+@media (max-width:768px) {
+
+  .what-we-do {
+    padding: 50px 0;
+  }
+  .media {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .what-we-do h2 {
+    font-size: 42px;
+  }
+
+  .subtitle-media-body {
+    padding-top: 10px;
+  }
+}
+
+@media (min-width:768px) {
+
+  .what-we-do {
+    padding: 100px 0;
+  }
+}

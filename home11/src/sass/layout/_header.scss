@@ -21,7 +21,7 @@ header {
   }
 
   .nav-link {
-    font-family: "Proxima Nova", sans-serif;
+    font-family: $font;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -34,13 +34,9 @@ header {
   align-items: center
 }
 
-.header-box {
-  padding: 225px 0;
-}
-
 h1 {
   color: #000000;
-  font-family: "Proxima Nova", sans-serif;
+  font-family: $font;
   font-size: 48px;
   font-weight: 700;
   line-height: 36px;
@@ -55,18 +51,37 @@ h1 {
 
 .header-text {
   color: #949494;
-  font-family: "Proxima Nova", sans-serif;
+  font-family: $font;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   text-align: center;
 }
 
-.mouse-text {
+.scrool-text {
   color: #ffffff;
-  font-family: "Proxima Nova", sans-serif;
+  font-family: $font;
   font-size: 18px;
   font-weight: 400;
   line-height: 36px;
 }
 
+@media (max-width:768px) {
+  .header-box {
+    padding: 50px 0;
+  }
+
+  .scrool {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .header-box {
+    padding: 225px 0;
+  }
+
+  .scrool {
+    margin-top: 250px;
+  }
+}
