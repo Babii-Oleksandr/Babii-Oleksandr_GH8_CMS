@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/js/main.js">
+</head>
+<body>
+<header>
+
+    <div class="calculator">
+
+        <form class="calculator__form">
+
+            <div class="calculator__row">
+                <input class="calculator__display" id="display" type="text" disabled />
+            </div>
+
+            <div class="calculator__row">
+                <button type="button" value="c" class="calculator__key calculator__clear"></button>
+                <button type="button" value="<--" class="calculator__key calculator__backspace"></button>
+                <button type="button" value="^3" class="calculator__key calculator__power"></button>
+                <button type="button" value="+" class="calculator__key calculator__button"></button>
+                <button type="button" value="deg" class="calculator__key calculator__button"></button>
+            </div>
+
+            <div class="calculator__row">
+                <button type="button" value="1" class="calculator__key calculator__button"></button>
+                <button type="button" value="2" class="calculator__key calculator__button"></button>
+                <button type="button" value="3" class="calculator__key calculator__button"></button>
+                <button type="button" value="-" class="calculator__key calculator__button"></button>
+                <button type="button" value="root" class="calculator__key calculator__button"></button>
+            </div>
+
+            <div class="calculator__row">
+                <button type="button" value="4" class="calculator__key calculator__button"></button>
+                <button type="button" value="5" class="calculator__key calculator__button"></button>
+                <button type="button" value="6" class="calculator__key calculator__button"></button>
+                <button type="button" value="*" class="calculator__key calculator__button"></button>
+                <button type="button" value="cos" class="calculator__key calculator__button"></button>
+            </div>
+
+            <div class="calculator__row">
+                <button type="button" value="7" class="calculator__key calculator__button"></button>
+                <button type="button" value="8" class="calculator__key calculator__button"></button>
+                <button type="button" value="9" class="calculator__key calculator__button"></button>
+                <button type="button" value="/" class="calculator__key calculator__button"></button>
+                <button type="button" value="sin" class="calculator__key calculator__button"></button>
+            </div>
+
+            <div class="calculator__row">
+                <button type="button" value="0" class="calculator__key calculator__button"></button>
+                <button type="button" value="." class="calculator__key calculator__button"></button>
+                <button type="button" value="=" class="calculator__key calculator__key--equal"></button>
+                <button type="button" value="fact" class="calculator__key calculator__button"></button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <p>число 1 :  <input type="text" id="n1"></p>
+        <p>число 2 :  <input type="text" id="n2"></p>
+        <button onclick="plus()">+</button>
+        <button onclick="minus()">-</button>
+        <button onclick="multiplication()">*</button>
+        <button onclick="division()">/</button>
+        <button onclick="pow()">pow</button>
+        <button onclick="sqrt()">aqrt</button>
+        <button onclick="cos()">cos</button>
+        <button onclick="sin()">sin</button>
+        <button>factorial</button>
+
+        <hr>
+        <p id="out">Результат:</p>
+    </div>
+</header>
+
+<script src="assets/js/libs.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
