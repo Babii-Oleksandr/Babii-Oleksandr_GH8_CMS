@@ -84,5 +84,28 @@ return [
         'btn' => 'Watch more'
     ],
 
+    'about-us' => [
+        'h2' => 'About us!',
+        'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
+                    Curabitur ullamcorper auctor mauris, placerat fermentum.',
+    ],
+
+    'participant' => [
+        'h4' => 'John Doe',
+        'text' => [
+            'Curabitur ullamcorper auctor mauris, placerat fermentum.',
+            'Aliquam sagittis neque in lectus semper, arcu scelerisque.',
+            'Curabitur ullamcorper auctor mauris, placerat fermentum.',
+            'Neque in lectus semper, nec elementum arcu scelerisque.'
+        ],
+        'img' => [
+            'assets/img/participant-1.png',
+            'assets/img/participant-2.png',
+            'assets/img/participant-3.png',
+            'assets/img/participant-4.png'
+        ],
+        'btn' => 'Watch more'
+    ],
+
 
 ];

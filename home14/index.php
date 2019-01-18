@@ -204,36 +204,53 @@ $data = require('data.php');
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-8 m-auto">
-                <h2>About us!</h2>
+                <h2>
+                    <?= $data['about-us']['h2'];?>
+                </h2>
                 <p class="text-about-us">
-                    Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
-                    Curabitur ullamcorper auctor mauris, placerat fermentum.
+                    <?= $data['about-us']['text'];?>
                 </p>
             </div>
         </div>
         <div class="row main-items">
             <div class="col-12 col-md-6 col-lg-3 items">
-                <img src="assets/img/participant-1.png" alt="participant-1">
-                <h4>John Doe</h4>
-                <p class="text-about-us">Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+                <img src="<?= $data['participant']['img'][0];?>" alt="participant-1">
+                <h4>
+                    <?= $data['participant']['h4'];?>
+                </h4>
+                <p class="text-about-us">
+                    <?= $data['participant']['text'][0];?>
+                </p>
             </div>
             <div class="col-12 col-md-6 col-lg-3 items">
-                <img src="assets/img/participant-2.png" alt="participant-2">
-                <h4>John Doe</h4>
-                <p class="text-about-us">Aliquam sagittis neque in lectus semper, arcu scelerisque.</p>
+                <img src="<?= $data['participant']['img'][1];?>" alt="participant-2">
+                <h4>
+                    <?= $data['participant']['h4'];?>
+                </h4>
+                <p class="text-about-us">
+                    <?= $data['participant']['text'][1];?>
+                </p>
             </div>
             <div class="col-12 col-md-6 col-lg-3 items">
-                <img src="assets/img/participant-3.png" alt="participant-3">
-                <h4>John Doe</h4>
-                <p class="text-about-us">Curabitur ullamcorper auctor mauris, placerat fermentum.</p>
+                <img src="<?= $data['participant']['img'][2];?>" alt="participant-3">
+                <h4>
+                    <?= $data['participant']['h4'];?>
+                </h4>
+                <p class="text-about-us">
+                    <?= $data['participant']['text'][2];?>
+                </p>
             </div>
             <div class="col-12 col-md-6 col-lg-3 items">
-                <img src="assets/img/participant-4.png" alt="participant-4">
-                <h4>John Doe</h4>
-                <p class="text-about-us">Neque in lectus semper, nec elementum arcu scelerisque.</p>
+                <img src="<?= $data['participant']['img'][3];?>" alt="participant-4">
+                <h4>
+                    <?= $data['participant']['h4'];?>
+                </h4>
+                <p class="text-about-us">
+                    <?= $data['participant']['text'][3];?>
+                </p>
             </div>
         </div>
-        <a href="#" class="btn">Watch more</a>
+        <a href="#" class="btn"><?= $data['participant']['btn'];?></a>
     </div>
 </section>
 <section class="maps">
