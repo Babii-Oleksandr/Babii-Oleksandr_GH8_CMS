@@ -1,3 +1,6 @@
+<?php
+$data = require('data.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +17,10 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">
-                <img src="assets/img/Logo.png" alt="Logo">
+                <?php
+                $siteLogo = $data['siteLogo'];
+                print_r('<img src='.$data['siteLogo']['src'].' alt='.$data['siteLogo']['alt'].'>')
+                ?>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,30 +29,27 @@
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Offer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
+                    <?php
+                        foreach($data['mainMenu'] as $menu) {
+                            print_r('<li class="nav-item"><a class="nav-link" href='.$menu["url"] . '>' .
+                                $menu["title"] . '</a></li>');
+                        }
+                    ?>
                 </ul>
             </div>
         </nav>
         <div class="header-box">
             <div class="row justify-content-center">
                 <div class="col- header-content">
-                    <h1>Lorem ipsum dolor sit amet</h1>
-                    <span class="header-text">Nunc vel nibh tempor, pharetra lectus congue, luctus orci.</span>
-                    <a href="#" class="btn">Ask for price</a>
+                    <h1>
+                        <?= $data['header-box']['h1']; ?>
+                    </h1>
+                    <span class="header-text">
+                        <?= $data['header-box']['span']; ?>
+                    </span>
+                    <a href="#" class="btn">
+                        <?= $data['header-box']['button']; ?>
+                    </a>
                     <a href="#"><img class="scrool" src="assets/img/mouse.png" alt="mouse"></a>
                     <span class="scrool-text">scrool down</span>
                 </div>
@@ -58,22 +61,26 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 best-design">
-                <h2>Best<span>Design</span></h2>
+                <h2>
+                    <?= $data['best-design']['h2']; ?>
+                </h2>
                 <p class="best-text">
-                    Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
-                    auctor mauris, placerat fermentum lectus vulputate sed. Phasellus vestibulum sit amet dolor eget
-                    eleifend.
+                    <?= $data['best-design']['best-text']; ?>
                 </p>
-                <a href="#" class="btn">Ask for price</a>
+                <a href="#" class="btn">
+                    <?= $data['header-box']['button']; ?>
+                </a>
             </div>
             <div class="col-12 col-md-6 best-code">
-                <h2>Best<span>Code</span></h2>
+                <h2>
+                    <?= $data['best-code']['h2']; ?>
+                </h2>
                 <p class="best-text">
-                    Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
-                    auctor mauris, placerat fermentum lectus vulputate sed. Phasellus vestibulum sit amet dolor eget
-                    eleifend.
+                    <?= $data['best-code']['best-text']; ?>
                 </p>
-                <a href="#" class="btn">Ask for price</a>
+                <a href="#" class="btn">
+                    <?= $data['header-box']['button']; ?>
+                </a>
             </div>
         </div>
     </div>
@@ -81,17 +88,20 @@
 <section>
     <div class="container">
         <div class="what-we-do">
-            <h2>What we do?</h2>
+            <h2>
+                <?= $data['what-we-do']['h2']; ?>
+            </h2>
             <div class="row">
                 <div class="col-12 col-lg-6 ">
                     <div class="media">
                         <img class="align-self-start mr-4" src="assets/img/icon-web-design.png"
                              alt="icon-web-design">
                         <div class="media-body">
-                            <h3 class="mt-0 subtitle-media-body">Web design</h3>
+                            <h3 class="mt-0 subtitle-media-body">
+                                <?= $data ['what-we-do']['web-design']['h3']; ?>
+                            </h3>
                             <p class="text-media-body">
-                                Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
-                                Curabitur ullamcorper auctor mauris, placerat fermentum.
+                                <?= $data ['what-we-do']['web-design']['text']; ?>
                             </p>
                         </div>
                     </div>
@@ -101,10 +111,11 @@
                         <img class="align-self-start mr-4" src="assets/img/icon-web-applications.png"
                              alt="icon-web-applications">
                         <div class="media-body">
-                            <h3 class="mt-0 subtitle-media-body">Web Applications</h3>
+                            <h3 class="mt-0 subtitle-media-body">
+                                <?= $data ['what-we-do']['web-application']['h3']; ?>
+                            </h3>
                             <p class="text-media-body">
-                                Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
-                                Curabitur ullamcorper auctor mauris, placerat fermentum.
+                                <?= $data ['what-we-do']['web-application']['text']; ?>
                             </p>
                         </div>
                     </div>
@@ -116,10 +127,11 @@
                         <img class="align-self-start mr-4" src="assets/img/icon-digital-paiting.png"
                              alt="digital-paiting">
                         <div class="media-body">
-                            <h3 class="mt-0 subtitle-media-body">Digital paiting</h3>
+                            <h3 class="mt-0 subtitle-media-body">
+                                <?= $data ['what-we-do']['digital-paiting']['h3']; ?>
+                            </h3>
                             <p class="text-media-body">
-                                Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
-                                Curabitur ullamcorper auctor mauris, placerat fermentum.
+                                <?= $data ['what-we-do']['digital-paiting']['text']; ?>
                             </p>
                         </div>
                     </div>
@@ -129,16 +141,19 @@
                         <img class="align-self-start mr-4" src="assets/img/icon-desktop-applications.png"
                              alt="icon-desktop-applications">
                         <div class="media-body">
-                            <h3 class="mt-0 subtitle-media-body">Desktop Applications</h3>
+                            <h3 class="mt-0 subtitle-media-body">
+                                <?= $data ['what-we-do']['desktop-applications']['h3']; ?>
+                            </h3>
                             <p class="text-media-body">
-                                Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
-                                Curabitur ullamcorper auctor mauris, placerat fermentum.
+                                <?= $data ['what-we-do']['desktop-applications']['text']; ?>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">Ask for price</a>
+            <a href="#" class="btn">
+                <?= $data['header-box']['button']; ?>
+            </a>
         </div>
     </div>
 </section>
@@ -146,32 +161,41 @@
     <div class="row">
         <div class="col-12 col-lg-4 drone-zone list">
             <div class="text-hover">
-                <h3>Neptune template</h3>
+                <h3>
+                    <?= $data['text-hover']['h3'];?>
+                </h3>
                 <p class="slider-text">
-                    Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
-                    auctor mauris, placerat fermentum.
+                    <?= $data['text-hover']['text'];?>
                 </p>
-                <a href="#" class="btn">Watch more</a>
+                <a href="#" class="btn">
+                    <?= $data['text-hover']['btn'];?>
+                </a>
             </div>
         </div>
         <div class="col-12 col-lg-4 profile list">
             <div class="text-hover">
-                <h3>Neptune template</h3>
+                <h3>
+                    <?= $data['text-hover']['h3'];?>
+                </h3>
                 <p class="slider-text">
-                    Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
-                    auctor mauris, placerat fermentum.
+                    <?= $data['text-hover']['text'];?>
                 </p>
-                <a href="#" class="btn">Watch more</a>
+                <a href="#" class="btn">
+                    <?= $data['text-hover']['btn'];?>
+                </a>
             </div>
         </div>
         <div class="col-12 col-lg-4 fit-app list">
             <div class="text-hover">
-                <h3>Neptune template</h3>
+                <h3>
+                    <?= $data['text-hover']['h3'];?>
+                </h3>
                 <p class="slider-text">
-                    Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
-                    auctor mauris, placerat fermentum.
+                    <?= $data['text-hover']['text'];?>
                 </p>
-                <a href="#" class="btn">Watch more</a>
+                <a href="#" class="btn">
+                    <?= $data['text-hover']['btn'];?>
+                </a>
             </div>
         </div>
     </div>
@@ -225,4 +249,3 @@
 <script src="assets/js/main.js"></script>
 </body>
 </html>
-$data = require('data.php');

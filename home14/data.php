@@ -7,30 +7,82 @@ return [
             'url' => '#',
         ],
         [
-            'title' => 'Events',
-            'url' => '#',
-        ],
-    ],
-    'siteLogo' => 'img/some.png',
-    'socialLinks' => [
-        [
-            'class' => 'fa-facebook',
-            'count' => '32K',
+            'title' => 'About us',
             'url' => '#',
         ],
         [
-            'class' => 'fa-twitter',
-            'count' => '55K',
+            'title' => 'Offer',
             'url' => '#',
         ],
         [
-            'class' => 'fa-google-plus',
-            'count' => '23K',
+            'title' => 'Portfolio',
+            'url' => '#',
+        ],
+        [
+            'title' => 'Contact',
             'url' => '#',
         ],
     ],
-    'buttonBuy' => [
-        'title' => 'Purchase ticket',
-        'url' => '#',
+
+    'siteLogo' => [
+        'src' => 'assets/img/Logo.png',
+        'alt' => 'Logo'
+        ],
+
+    'header-box' =>[
+        'h1' => 'Lorem ipsum dolor sit amet',
+        'span' => 'Nunc vel nibh tempor, pharetra lectus congue, luctus orci.',
+        'button' => 'Ask for price',
     ],
+
+    'best-design' => [
+        'h2' => 'Best<span>Design</span>',
+        'best-text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
+                    auctor mauris, placerat fermentum lectus vulputate sed. Phasellus vestibulum sit amet dolor eget
+                    eleifend.'
+
+    ],
+
+    'best-code' => [
+        'h2' => 'Best<span>Code</span>',
+        'best-text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
+                    auctor mauris, placerat fermentum lectus vulputate sed. Phasellus vestibulum sit amet dolor eget
+                    eleifend.'
+
+    ],
+
+    'what-we-do' => [
+        'h2' => 'What we do?',
+
+        'web-design' => [
+            'h3' => 'Web design',
+            'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
+                                Curabitur ullamcorper auctor mauris, placerat fermentum.'
+        ],
+        'web-application' => [
+            'h3' => 'Web Applications',
+            'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
+                                Curabitur ullamcorper auctor mauris, placerat fermentum.'
+        ],
+        'digital-paiting' => [
+            'h3' => 'Digital paiting',
+            'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
+                                Curabitur ullamcorper auctor mauris, placerat fermentum.'
+        ],
+        'desktop-applications' => [
+            'h3' => 'Desktop Applications',
+            'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
+                                Curabitur ullamcorper auctor mauris, placerat fermentum.'
+        ]
+
+    ],
+
+    'text-hover' => [
+        'h3' => 'Neptune template',
+        'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque. Curabitur ullamcorper
+                    auctor mauris, placerat fermentum.',
+        'btn' => 'Watch more'
+    ],
+
+
 ];

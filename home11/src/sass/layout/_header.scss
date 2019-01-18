@@ -30,6 +30,13 @@ header {
   }
 }
 
+@media (max-width: 993px) {
+  .nav-item {
+    max-width: 100px;
+    padding: 0 10px;
+  }
+}
+
 .header-content {
   display: flex;
   flex-direction:column;
