@@ -42,13 +42,16 @@ $data = require('data.php');
             <div class="row justify-content-center">
                 <div class="col- header-content">
                     <h1>
-                        <?= $data['header-box']['h1']; ?>
+                        <?php
+                        echo $data['header-box']['h1']; ?>
                     </h1>
                     <span class="header-text">
-                        <?= $data['header-box']['span']; ?>
+                        <?php
+                        echo $data['header-box']['span']; ?>
                     </span>
                     <a href="#" class="btn">
-                        <?= $data['header-box']['button']; ?>
+                        <?php
+                       echo $data['header-box']['button']; ?>
                     </a>
                     <a href="#"><img class="scrool" src="assets/img/mouse.png" alt="mouse"></a>
                     <span class="scrool-text">scrool down</span>
@@ -89,7 +92,7 @@ $data = require('data.php');
     <div class="container">
         <div class="what-we-do">
             <h2>
-                <?= $data['what-we-do']['h2']; ?>
+                <?= $data['what-we-do']['title']; ?>
             </h2>
             <div class="row">
                 <div class="col-12 col-lg-6 ">
@@ -98,7 +101,7 @@ $data = require('data.php');
                              alt="icon-web-design">
                         <div class="media-body">
                             <h3 class="mt-0 subtitle-media-body">
-                                <?= $data ['what-we-do']['web-design']['h3']; ?>
+                                <?= $data ['what-we-do']['web-design']['title']; ?>
                             </h3>
                             <p class="text-media-body">
                                 <?= $data ['what-we-do']['web-design']['text']; ?>
@@ -112,7 +115,7 @@ $data = require('data.php');
                              alt="icon-web-applications">
                         <div class="media-body">
                             <h3 class="mt-0 subtitle-media-body">
-                                <?= $data ['what-we-do']['web-application']['h3']; ?>
+                                <?= $data ['what-we-do']['web-application']['title']; ?>
                             </h3>
                             <p class="text-media-body">
                                 <?= $data ['what-we-do']['web-application']['text']; ?>
@@ -128,7 +131,7 @@ $data = require('data.php');
                              alt="digital-paiting">
                         <div class="media-body">
                             <h3 class="mt-0 subtitle-media-body">
-                                <?= $data ['what-we-do']['digital-paiting']['h3']; ?>
+                                <?= $data ['what-we-do']['digital-paiting']['title']; ?>
                             </h3>
                             <p class="text-media-body">
                                 <?= $data ['what-we-do']['digital-paiting']['text']; ?>
@@ -142,7 +145,7 @@ $data = require('data.php');
                              alt="icon-desktop-applications">
                         <div class="media-body">
                             <h3 class="mt-0 subtitle-media-body">
-                                <?= $data ['what-we-do']['desktop-applications']['h3']; ?>
+                                <?= $data ['what-we-do']['desktop-applications']['title']; ?>
                             </h3>
                             <p class="text-media-body">
                                 <?= $data ['what-we-do']['desktop-applications']['text']; ?>

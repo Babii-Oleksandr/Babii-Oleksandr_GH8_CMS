@@ -52,25 +52,25 @@ return [
     ],
 
     'what-we-do' => [
-        'h2' => 'What we do?',
+        'title' => 'What we do?',
 
         'web-design' => [
-            'h3' => 'Web design',
+            'title' => 'Web design',
             'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
                                 Curabitur ullamcorper auctor mauris, placerat fermentum.'
         ],
         'web-application' => [
-            'h3' => 'Web Applications',
+            'title' => 'Web Applications',
             'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
                                 Curabitur ullamcorper auctor mauris, placerat fermentum.'
         ],
         'digital-paiting' => [
-            'h3' => 'Digital paiting',
+            'title' => 'Digital paiting',
             'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
                                 Curabitur ullamcorper auctor mauris, placerat fermentum.'
         ],
         'desktop-applications' => [
-            'h3' => 'Desktop Applications',
+            'title' => 'Desktop Applications',
             'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
                                 Curabitur ullamcorper auctor mauris, placerat fermentum.'
         ]
