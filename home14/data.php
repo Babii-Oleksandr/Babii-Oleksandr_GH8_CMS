@@ -51,32 +51,6 @@ return [
 
     ],
 
-    'what-we-do' => [
-        'title' => 'What we do?',
-
-        'web-design' => [
-            'title' => 'Web design',
-            'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
-                                Curabitur ullamcorper auctor mauris, placerat fermentum.'
-        ],
-        'web-application' => [
-            'title' => 'Web Applications',
-            'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
-                                Curabitur ullamcorper auctor mauris, placerat fermentum.'
-        ],
-        'digital-paiting' => [
-            'title' => 'Digital paiting',
-            'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
-                                Curabitur ullamcorper auctor mauris, placerat fermentum.'
-        ],
-        'desktop-applications' => [
-            'title' => 'Desktop Applications',
-            'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
-                                Curabitur ullamcorper auctor mauris, placerat fermentum.'
-        ]
-
-    ],
-    ////////////////////////////////////////////
     'whatWeDo' => [
         'title' => 'What we do?',
         'whatWeDoList' => [

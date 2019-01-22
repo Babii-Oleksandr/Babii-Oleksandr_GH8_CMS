@@ -92,7 +92,7 @@ $data = require('data.php');
     <div class="container">
         <div class="what-we-do">
             <h2>
-                <?= $data['what-we-do']['title']; ?>
+                <?= $data['whatWeDo']['title']; ?>
             </h2>
             <div class="row">
                 <?php
