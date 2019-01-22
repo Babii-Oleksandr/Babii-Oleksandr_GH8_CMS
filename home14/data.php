@@ -76,6 +76,36 @@ return [
         ]
 
     ],
+    ////////////////////////////////////////////
+    'whatWeDo' => [
+        'title' => 'What we do?',
+        'whatWeDoList' => [
+            [
+                'img' => 'assets/img/icon-web-design.png',
+                'title' => 'Web design',
+                'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
+                                Curabitur ullamcorper auctor mauris, placerat fermentum.'
+            ],
+            [
+                'img' => 'assets/img/icon-web-applications.png',
+                'title' => 'Web Applications',
+                'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
+                                Curabitur ullamcorper auctor mauris, placerat fermentum.'
+            ],
+            [
+                'img' => 'assets/img/icon-digital-paiting.png',
+                'title' => 'Digital paiting',
+                'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
+                                Curabitur ullamcorper auctor mauris, placerat fermentum.'
+            ],
+            [
+                'img' => 'assets/img/icon-desktop-applications.png',
+                'title' => 'Desktop Applications',
+                'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
+                                Curabitur ullamcorper auctor mauris, placerat fermentum.'
+            ],
+        ],
+    ],
 
     'text-hover' => [
         'h3' => 'Neptune template',
@@ -88,24 +118,33 @@ return [
         'h2' => 'About us!',
         'text' => 'Aliquam sagittis neque in lectus semper, nec elementum arcu scelerisque.
                     Curabitur ullamcorper auctor mauris, placerat fermentum.',
-    ],
-
-    'participant' => [
-        'h4' => 'John Doe',
-        'text' => [
-            'Curabitur ullamcorper auctor mauris, placerat fermentum.',
-            'Aliquam sagittis neque in lectus semper, arcu scelerisque.',
-            'Curabitur ullamcorper auctor mauris, placerat fermentum.',
-            'Neque in lectus semper, nec elementum arcu scelerisque.'
-        ],
-        'img' => [
-            'assets/img/participant-1.png',
-            'assets/img/participant-2.png',
-            'assets/img/participant-3.png',
-            'assets/img/participant-4.png'
-        ],
         'btn' => 'Watch more'
     ],
 
 
+    'participant' => [
+        [
+            'img' => 'assets/img/participant-1.png',
+            'title' => 'John Doe',
+            'text' => 'Curabitur ullamcorper auctor mauris, placerat fermentum.',
+        ],
+        [
+            'img' => 'assets/img/participant-2.png',
+            'title' => 'John Doe',
+            'text' => 'Aliquam sagittis neque in lectus semper, arcu scelerisque.',
+        ],
+        [
+            'img' => 'assets/img/participant-3.png',
+            'title' => 'John Doe',
+            'text' => 'Curabitur ullamcorper auctor mauris, placerat fermentum.',
+        ],
+        [
+            'img' => 'assets/img/participant-4.png',
+            'title' => 'John Doe',
+            'text' => 'Neque in lectus semper, nec elementum arcu scelerisque.',
+        ],
+
+
+
+    ],
 ];

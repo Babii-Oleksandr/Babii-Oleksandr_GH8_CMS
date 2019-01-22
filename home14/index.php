@@ -95,65 +95,28 @@ $data = require('data.php');
                 <?= $data['what-we-do']['title']; ?>
             </h2>
             <div class="row">
-                <div class="col-12 col-lg-6 ">
-                    <div class="media">
-                        <img class="align-self-start mr-4" src="assets/img/icon-web-design.png"
-                             alt="icon-web-design">
-                        <div class="media-body">
-                            <h3 class="mt-0 subtitle-media-body">
-                                <?= $data ['what-we-do']['web-design']['title']; ?>
-                            </h3>
-                            <p class="text-media-body">
-                                <?= $data ['what-we-do']['web-design']['text']; ?>
-                            </p>
+                <?php
+                    foreach ($data['whatWeDo']['whatWeDoList'] as $list) {
+                        ?>
+                        <div class="col-12 col-lg-6 ">
+                            <div class="media">
+                                <img class="align-self-start mr-4" src="<?php echo $list ['img'];?>"
+                                     alt="icon-web">
+                                <div class="media-body">
+                                    <h3 class="mt-0 subtitle-media-body">
+                                        <?php echo $list ['title'];?>
+                                    </h3>
+                                    <p class="text-media-body">
+                                        <?php echo $list ['text'];?>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 ">
-                    <div class="media">
-                        <img class="align-self-start mr-4" src="assets/img/icon-web-applications.png"
-                             alt="icon-web-applications">
-                        <div class="media-body">
-                            <h3 class="mt-0 subtitle-media-body">
-                                <?= $data ['what-we-do']['web-application']['title']; ?>
-                            </h3>
-                            <p class="text-media-body">
-                                <?= $data ['what-we-do']['web-application']['text']; ?>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                    }
+                ?>
             </div>
-            <div class="row">
-                <div class="col-12 col-lg-6 ">
-                    <div class="media">
-                        <img class="align-self-start mr-4" src="assets/img/icon-digital-paiting.png"
-                             alt="digital-paiting">
-                        <div class="media-body">
-                            <h3 class="mt-0 subtitle-media-body">
-                                <?= $data ['what-we-do']['digital-paiting']['title']; ?>
-                            </h3>
-                            <p class="text-media-body">
-                                <?= $data ['what-we-do']['digital-paiting']['text']; ?>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 ">
-                    <div class="media">
-                        <img class="align-self-start mr-4" src="assets/img/icon-desktop-applications.png"
-                             alt="icon-desktop-applications">
-                        <div class="media-body">
-                            <h3 class="mt-0 subtitle-media-body">
-                                <?= $data ['what-we-do']['desktop-applications']['title']; ?>
-                            </h3>
-                            <p class="text-media-body">
-                                <?= $data ['what-we-do']['desktop-applications']['text']; ?>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <a href="#" class="btn">
                 <?= $data['header-box']['button']; ?>
             </a>
@@ -216,44 +179,22 @@ $data = require('data.php');
             </div>
         </div>
         <div class="row main-items">
-            <div class="col-12 col-md-6 col-lg-3 items">
-                <img src="<?= $data['participant']['img'][0];?>" alt="participant-1">
-                <h4>
-                    <?= $data['participant']['h4'];?>
-                </h4>
-                <p class="text-about-us">
-                    <?= $data['participant']['text'][0];?>
-                </p>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 items">
-                <img src="<?= $data['participant']['img'][1];?>" alt="participant-2">
-                <h4>
-                    <?= $data['participant']['h4'];?>
-                </h4>
-                <p class="text-about-us">
-                    <?= $data['participant']['text'][1];?>
-                </p>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 items">
-                <img src="<?= $data['participant']['img'][2];?>" alt="participant-3">
-                <h4>
-                    <?= $data['participant']['h4'];?>
-                </h4>
-                <p class="text-about-us">
-                    <?= $data['participant']['text'][2];?>
-                </p>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 items">
-                <img src="<?= $data['participant']['img'][3];?>" alt="participant-4">
-                <h4>
-                    <?= $data['participant']['h4'];?>
-                </h4>
-                <p class="text-about-us">
-                    <?= $data['participant']['text'][3];?>
-                </p>
-            </div>
+            <?php foreach ($data ['participant'] as $aboutAs) {
+                ?>
+                <div class="col-12 col-md-6 col-lg-3 items">-->
+                    <img src="<?php echo $aboutAs['img'];?>" alt="participant">
+                    <h4>
+                        <?php echo $aboutAs['title'];?>
+                    </h4>
+                    <p class="text-about-us">
+                        <?php echo $aboutAs['text'];?>
+                    </p>
+                </div>
+            <?php
+            }
+            ?>
         </div>
-        <a href="#" class="btn"><?= $data['participant']['btn'];?></a>
+        <a href="#" class="btn"><?= $data['about-us']['btn'];?></a>
     </div>
 </section>
 <section class="maps">
