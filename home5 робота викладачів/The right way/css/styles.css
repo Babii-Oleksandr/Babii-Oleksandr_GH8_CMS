@@ -1,0 +1,253 @@
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.main-background {
+    background: #76b9b2;
+}
+
+.main-logo {
+    max-width: 226px;
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.second-logo {
+    max-width: 249px;
+    float: right;
+    width: 50%;
+}
+
+.logos a {
+    display: block;
+}
+
+.logos {
+    padding: 0;
+    list-style: none;
+}
+
+.park {
+    margin-bottom: -38px;
+}
+
+.main-heading {
+    font-family: "akzidenz grotesk be", sans-serif;
+    font-weight: bold;
+    font-size: 44px;
+    color: #5a5555;
+    max-width: 950px;
+    width: 100%;
+    margin: 47px auto 0;
+}
+
+.main-subheading {
+    font-family: "akzidenz grotesk be", sans-serif;
+    font-size: 33px;
+    color: #5a5555;
+    max-width: 950px;
+    margin: 50px auto;
+}
+
+.form-container {
+    max-width: 921px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.request-form {
+    background-color: #008375;
+}
+
+.request-form h2 {
+    color: #a7dbd3;
+    font-size: 45px;
+    font-family: "akzidenz grotesk be", sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    width: 100%;
+}
+
+.contact-number {
+    color: #a7dbd3;
+    font-size: 29px;
+    font-family: "gotham", sans-serif;
+    font-weight: 700;
+    text-align: right;
+    display: inline-block;
+    max-width: 230px;
+    width: 100%;
+    float: right;
+}
+
+.form-rule {
+    color: #f1f1f1;
+    font-size: 23px;
+    font-family: "arial-bold mt", sans-serif;
+    width: 100%;
+}
+
+.form-sample ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.left-inputs, .right-inputs {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.form-input {
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    border: none;
+    height: 50px;
+    padding: 0 20px;
+}
+
+.half-width {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.form-sample li {
+    margin-bottom: 20px;
+}
+
+.input-left, .form-sample .left-inputs {
+    padding-right: 5px;
+}
+
+.input-right, .form-sample .right-inputs {
+    padding-left: 5px;
+}
+
+.button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    border: none;
+    background-color: #68c2b6;
+    height: 63px;
+    padding: 0 35px;
+    color: #fff;
+    font-family: 'Gotham', sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 63px;
+}
+
+.button-wrapper {
+    clear: both;
+    text-align: right;
+}
+
+.breeze-rmgi {
+    background-color: #a7dbd3;
+    padding-top: 30px;
+}
+
+.order-now {
+    background-color: #007f6c;
+    text-decoration: none;
+    padding: 0 31px;
+    height: 63px;
+    font-family: 'Gotham', sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 63px;
+    color: #fff;
+    display: inline-block;
+    margin: 60px 0 50px 35px;
+}
+
+.resource-center {
+    text-align: center;
+}
+
+.resource-center h2 {
+    margin: 0;
+    padding: 20px;
+    font-family: "akzidenz grotesk be", sans-serif;
+    font-size: 33px;
+    font-weight: 600;
+    color: #777373;
+}
+
+.resource {
+    vertical-align: bottom;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.resource figcaption a {
+    font-size: 19px;
+    font-weight: 500;
+    font-family: "gatham", sans-serif;
+    color: #515151;
+}
+
+footer {
+    background-color: #515151;
+    font-family: "arial mt", sans-serif;
+    font-size: 18px;
+    padding-bottom: 175px;
+}
+
+footer p {
+    margin: 0;
+    padding-top: 20px;
+    color: #eef1f1;
+}
+
+::-webkit-input-placeholder { /* Chrome/Safari */
+    color: #76b9b2;
+    font-size: 19px;
+    font-family: "gotham", sans-serif;
+    font-weight: 600;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: #76b9b2;
+    font-size: 19px;
+    font-family: "gotham", sans-serif;
+    font-weight: 600;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    color: #76b9b2;
+    font-size: 19px;
+    font-family: "gotham", sans-serif;
+    font-weight: 600;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #76b9b2;
+    font-size: 19px;
+    font-family: "gotham", sans-serif;
+    font-weight: 600;
+}

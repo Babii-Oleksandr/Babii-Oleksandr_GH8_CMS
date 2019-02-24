@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="ctyle.css">
+</head>
+<body>
+    <h1>Урок "Формы" теги и их атрибуты.</h1>
+
+    <form action="" method="get">
+        <fieldset>
+            <legend><b>Немного о себе</b></legend>
+            <label for="name">Имя:<input size="40px" id="name" type="text" name="name" required></label><br><br>
+            <label for="surname"> Фамилия:<input size="40px" id="surname" type="text" name="surname" required></label><br><br>
+            Пол:
+                <input id="male" type="radio" checked name="sex" value="male"><label for="male">Мужской</label>
+                <input id="woman" type="radio" name="sex" value="woman"><label for="woman">Женский</label><br><br>
+            Вoзраст:
+                <input id="age" type="number" min="1" max="100" step="1" name="age" required><label for="age"> лет</label>
+        </fieldset><br>
+
+        <fieldset>
+        <legend><b>Подробно о себе</b></legend>
+            <input id="men" type="radio" checked name="sex2" value="men"><label for="men"> Молодой человек</label><br>
+            <input id="girl" type="radio" name="sex2" value="girl"><label for="girl"> Девушка</label><br><br>
+            
+            <input size="20px" id="date_birth" type="text" name="date_birth" required><label for="date_birth"> Дата рождения</label><br>
+            <input size="20px" id="marital_status" type="text" name="marital_status" required><label for="marital_status"> Семейное положение</label><br>
+            <input size="20px" id="social_status" type="text" name="social_status" required><label for="social_status"> Социальный статус</label><br>
+            <input size="20px" id="residence" type="text" name="residence" required><label for="residence"> Место жительства</label><br>
+            
+            <p><b>Что вы обычно делаете на выходных:</b></p>
+            <input id="sleep" type="checkbox" name="sleep"><label for="sleep"> Сплю</label><br>
+            <input id="walking" type="checkbox" name="walking"><label for="walking"> Гуляю с друзьями</label><br>
+            <input id="fishing" type="checkbox" name="fishing"><label for="fishing"> Хожу на рыбалку</label><br>
+            <input id="play" type="checkbox" name="play"><label for="play"> Играю в игры</label><br>
+            
+            <p><b>Рассказать о формах в книге, посвященной HTML:</b></p>
+            <select name="select1">
+                <option>Site frequency</option>
+                <option>Tags HTML</option>
+                <option>Attributes of the tags</option>
+            </select>
+
+            <p><b>Сколько книг вы прочитали за свою жизнь:</b></p>
+            <input id="zero" type="radio" name="books"><label for="zero">0-10</label><br>
+            <input id="eleven" type="radio" name="books"><label for="eleven">11-20</label><br>
+            <input id="twenty_one" type="radio" name="books"><label for="twenty_one">21-50</label><br>
+            <input id="fifty" type="radio" name="books"><label for="fifty">50+</label><br>
+
+            <p><b>Ваши коментарии:</b></p>
+            <textarea name="coments" rows="10" cols="60" ></textarea><br><br>
+
+            <select size="3" multiple name="select2">
+                <option>Первая позиция</option>
+                <option>Вторая позиция</option>
+                <option>Третья позиция</option>
+            </select>
+        </fieldset><br>
+
+        <fieldset>
+            <legend><b>И в заключении</b></legend>
+            <input type="text" placeholder="Это поле было введено до вас" name="prosto_pole"><br><br>
+            
+            <label for="email"><b>Email:</b></label><br>
+            <input id="email" type="email" name="email" required><br><br>
+            
+            <b>Хотите подписаться на самую модную рассылку спама?</b><br>
+            <em>Выбирите категории</em><br><br>
+
+            <input id="equipment" type="checkbox" name="equipment"><label for="equipment"> Оборудование</label><br>
+            <input id="lunch" type="checkbox" name="lunch"><label for="lunch"> Как приготовить обеды</label><br>
+            <input id="million" type="checkbox" name="million"><label for="million"> Заработай миллион за два дня!</label><br><br>
+
+            <b>На сколько сложная задача:</b><br><br>
+
+            <input id="absolutely_not" type="radio" name="task"><label for="absolutely_not"> Совсем нет</label><br>
+            <input id="so_so" type="radio" checked name="task"><label for="so_so"> Так себе</label><br>
+            <input id="barely" type="radio" name="task"><label for="barely"> Еле справились</label><br>
+        </fieldset><br>
+        <input type="submit" name="submit" value="Отправить">
+    </form>
+</body>
+</html>

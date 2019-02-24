@@ -1,0 +1,9 @@
+Home 6
+
+Теорія:
+1. Розібратися з флоатами https://css-tricks.com/all-about-floats/
+2. Розібратися з позиціонуванням https://css-tricks.com/almanac/properties/p/position/
+3. Розібратися з флексом https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Практика:
+зверстати сторінку по дизайну https://app.avocode.com/revisions/34605457/?design=22448782

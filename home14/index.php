@@ -95,9 +95,7 @@ $data = require('data.php');
                 <?= $data['whatWeDo']['title']; ?>
             </h2>
             <div class="row">
-                <?php
-                    foreach ($data['whatWeDo']['whatWeDoList'] as $list) {
-                        ?>
+                <?php foreach ($data['whatWeDo']['whatWeDoList'] as $list) { ?>
                         <div class="col-12 col-lg-6 ">
                             <div class="media">
                                 <img class="align-self-start mr-4" src="<?php echo $list ['img'];?>"
@@ -112,9 +110,7 @@ $data = require('data.php');
                                 </div>
                             </div>
                         </div>
-                <?php
-                    }
-                ?>
+                <?php } ?>
             </div>
 
             <a href="#" class="btn">
@@ -179,9 +175,8 @@ $data = require('data.php');
             </div>
         </div>
         <div class="row main-items">
-            <?php foreach ($data ['participant'] as $aboutAs) {
-                ?>
-                <div class="col-12 col-md-6 col-lg-3 items">-->
+            <?php foreach ($data ['participant'] as $aboutAs): ?>
+                <div class="col-12 col-md-6 col-lg-3 items">
                     <img src="<?php echo $aboutAs['img'];?>" alt="participant">
                     <h4>
                         <?php echo $aboutAs['title'];?>
@@ -190,9 +185,7 @@ $data = require('data.php');
                         <?php echo $aboutAs['text'];?>
                     </p>
                 </div>
-            <?php
-            }
-            ?>
+            <?php endforeach; ?>
         </div>
         <a href="#" class="btn"><?= $data['about-us']['btn'];?></a>
     </div>

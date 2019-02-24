@@ -1,0 +1,294 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Roboto Slab, sans-serif;
+  text-align: center;
+}
+
+/*.....................header*/
+
+.header, .our-news {
+  background: #EDEFF1;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  padding: 15px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #31353e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.nav {
+  display: inline-block;
+}
+
+.nav a:hover {
+  background:#DD4B2B;
+  color: #FFFFFF;
+}
+
+/*........................main*/
+
+main {
+  background: url(../img/bg-room.png) 50% 50% no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2, h3 {
+  padding: 0;
+  margin: 0;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+h2 {
+  font-size: 72px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.logo-text {
+  margin-top: 150px;
+}
+.main-box {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.box-1, .box-2 {
+  margin: 10px 40px;
+}
+.box-1 {
+  max-width: 303px;
+}
+
+.box-2 {
+  max-width: 326px;
+}
+
+.text-main {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.center {
+  text-align: center;
+  padding:150px 0;
+  margin-top: 150px;
+}
+
+.button {
+  color: #612316;
+  font-size: 18px;
+  padding: 15px 60px;
+  background: #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/*........................section  our-news*/
+
+.our-news {
+  padding-bottom: 102px;
+}
+
+h4 {
+  color: #31353e;
+  font-size: 30px;
+  margin: 0;
+  padding: 80px 0;
+}
+
+.our-news-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.our-news-box h3 {
+  margin-top: 25px;
+}
+
+.button-mini {
+  color: #4e5159;
+  font-size: 15px;
+  padding: 20px 50px;
+  background: #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.our-news-box h3 {
+  font-size: 24px;
+  color: #31353E;
+}
+
+.text-our-news {
+  color: #31353e;
+  font-size: 15px;
+  padding: 0 50px;
+  margin:0 0 30px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+/*.....................section  newsletter*/
+
+.newsletter {
+  background: url(../img/bg-newsletter.png) 50% 50% no-repeat;
+  padding: 85px;
+}
+
+.news-box {
+  max-width:550px;
+  margin: 0 auto;
+}
+
+.text-news {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+input {
+  padding: 15px 35px;
+  border-radius: 27px;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  color: #f3f4f6;
+  width:80%;
+}
+
+input::placeholder {
+  color: #f3f4f6;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.sign-up-white {
+  padding: 15px 80px;
+  border-radius: 27px;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  position: absolute;
+  top: 1px;
+  right: 13px;
+  color: #612316;
+}
+
+.input-box {
+  position: relative;
+  margin-top: 40px;
+}
+
+/*...............section  ipsum-dolor*/
+
+.ipsum-dolor h4 {
+  color: #191b29;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0;
+}
+
+.block-first, .block-second {
+  display: flex;
+  align-items: center;
+}
+
+.block-first {
+  margin: 65px 0 55px;
+}
+
+.block-second {
+  margin-bottom: 85px;
+}
+
+.ipsum-dolor-box {
+  margin: 0 10px;
+  text-align: left;
+}
+
+
+.text-section {
+  margin-bottom: 35px;
+  color: #191b29;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.sign-up-red, .sign-up-violet {
+  display: inline-block;
+  padding: 15px 80px;
+  border-radius: 27px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.sign-up-red {
+  background: #DD4B2B;
+}
+
+.sign-up-violet {
+  background: #4B4E73;
+}
+
+/*.....................section-orange*/
+
+.section-orange {
+  background: url('../img/bg-orange.png') 50% 50% no-repeat;
+  padding: 60px 0;
+}
+
+.container-ul {
+  display: flex;
+  justify-content: space-around;
+}
+.container-ul li {
+  list-style: none;
+}
+
+.container-ul a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 2;
+}
+
+/*....................section-footer*/
+
+.section-footer {
+  background: url('../img/bg-newsletter.png') 50% 50% no-repeat;
+  height: 385px;
+}
+
+.text-box {
+  max-width: 670px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 85px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}

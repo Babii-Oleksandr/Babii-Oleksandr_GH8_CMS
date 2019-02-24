@@ -1,0 +1,284 @@
+
+.container {
+  width: 1815px;
+  background-color: #fefefe;
+  margin: 0 auto;
+  border: 1px solid #008375;
+}
+
+.header-left, .header-right {
+  width: 905px;
+  display: inline-block;
+  text-align: center;
+}
+
+.header-left {
+  margin-bottom: 10px;
+}
+
+.header-section {
+  width: 1815px;
+  display: block;
+  background-color: #a7dbd3;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 15px;
+}
+
+.image-header {
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.logo-text {
+  display: block;
+  margin: 20px auto;
+  width: 950px;
+  color: #5a5555;
+  font-family: "Akzidenz Grotesk BE", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -1.03px;
+  line-height: 49.69px;
+}
+
+.text {
+  display: block;
+  margin: 30px auto;
+  width: 950px;
+  color: #5a5555;
+  font-family: "Akzidenz Grotesk BE - Md", sans-serif;
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 45.52px;
+  letter-spacing: -0.92px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  max-width: 1815px;
+  background-color: #008375;
+}
+
+.block {
+  background-color: #008375;
+  width: 920px;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.form .container {
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 30px 0;
+  background-color: #008375;
+}
+
+
+.block-form {
+  background-color: indianred;
+  width: 800px;
+  padding: 0;
+}
+
+.container>p {
+  color: #f1f1f1;
+  font-family: "Arial - Bold MT", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 27.64px;
+}
+
+.block h2, .block p {
+  color: #a7dbd3;
+  font-weight: 700;
+  margin: 0;
+}
+
+.block h2 {
+  font-family: "Akzidenz Grotesk BE", sans-serif;
+  font-size: 45px;
+  line-height: 48.18px;
+  text-transform: uppercase;
+}
+
+.block p {
+  font-family: Gotham, sans-serif;
+  font-size: 29px;
+  line-height: 43.97px;
+}
+
+input::placeholder {
+  color: #76b9b2;
+  font-family: Gotham, sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 30.15px;
+}
+
+.form-button input:last-child {
+  background-color: #68c2b6;
+  color: #ffffff;
+  font-size: 23px;
+  padding: 10px 35px;
+}
+input {
+  background-color: #e3f3ef;
+  height: 50px;
+  margin: 5px 5px;
+  padding-left: 15px;
+}
+
+.input-short {
+  max-width: 200px;
+  width: 100%;
+}
+
+.input-long {
+  max-width: 432px;
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+.form-button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+main {
+  max-width: 1815px;
+  height: 571px;
+  background: #a7dbd3;
+}
+
+main .container {
+  max-width:979px;
+  height: 571px;
+  background: #a7dbd3;
+  border: 1px solid #a7dbd3;
+}
+
+.syringe h3 {
+  color: #575756;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 23.13px;
+  text-transform: uppercase;
+  padding: 40px 0 20px 60px;
+}
+
+.syringe h2 {
+  color: #575756;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 11.97px;
+  text-transform: uppercase;
+  letter-spacing: 4.22px;
+  padding-left: 15px;
+}
+
+.tagline {
+  margin-left: 120px;
+}
+
+.syringe img {
+  margin: -20px 0 -40px 0;
+}
+
+.syringe .small-tagline {
+  padding: 20px 20px 50px 0;
+  text-align: right;
+}
+
+button {
+  width: 187px;
+  height: 61px;
+  background: #007f6c;
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  margin-left: 30px;
+}
+
+nav {
+  max-width: 1815px;
+  width: 100%;
+  max-height: 550px;
+  height: 100%;
+  background-color: #D0EBE7;
+  margin-top: -20px;
+}
+
+nav .container {
+  max-width:800px;
+  height: 550px;
+  background: #D0EBE7;
+  border: 1px solid #D0EBE7;
+}
+
+nav h3 {
+  color: #777373;
+  font-family: "Akzidenz Grotesk BE - Md", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+.picture {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.nav a {
+  color: #515151;
+  font-family: Gotham, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 20px 30px;
+}
+
+footer {
+  width: 1815px;
+  height: 190px;
+  background: #515151;
+  margin-top: -20px;
+}
+
+footer .container {
+  max-width:1100px;
+  background: #515151;
+  border: 1px solid #515151;
+}
+footer .container p {
+  color: #eef1f1;
+  font-family: "Arial MT", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-top: 20px;
+}
